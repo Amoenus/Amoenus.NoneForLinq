@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+
+<package>
+  <metadata>
+    <id>Amoenus.PclTimer</id>
+    <version>$version$</version>
+    <title>Amoenus None For Linq</title>
+    <authors>Romans Pokrovskis</authors>
+    <owners></owners>
+    <description>
+      Linq extension method that adds None ( aka !Any() ) capability.
+    </description>
+    <releaseNotes>
+      Initial release.
+    </releaseNotes>
+    <summary>
+      Linq extension method that adds None ( aka !Any() ) capability.
+    </summary>
+    <language>en-US</language>
+    <projectUrl>https://gitlab.com/motivated.it/Amoenus.PclTimer</projectUrl>
+    <iconUrl>https://gitlab.com/motivated.it/Amoenus.PclTimer/raw/ce0161ee1fb10f43acd90c71eb6a2224bd0cdfd1/PclTimer.png</iconUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <licenseUrl>http://unlicense.org/UNLICENSE</licenseUrl>
+    <copyright></copyright>
+    <dependencies>
+    </dependencies>
+    <references></references>
+    <tags></tags>
+  </metadata>
+  <files>
+    <file src="..\Amoenus.NoneForLinq\bin\Release\" target="lib" />
+  </files>
+</package>
