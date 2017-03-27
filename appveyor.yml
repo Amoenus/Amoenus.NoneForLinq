@@ -2,6 +2,8 @@ version: 1.0.{build}
 image: Visual Studio 2017
 configuration: Release
 clone_folder: C:\Git\
+before_build:
+- cmd: nuget restore
 build:
   verbosity: minimal
 after_build:
