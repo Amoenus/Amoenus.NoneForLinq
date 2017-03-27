@@ -11,7 +11,7 @@
       Linq extension method that adds None ( aka !Any() ) capability.
     </description>
     <releaseNotes>
-      Initial release.
+      Converted to NetStandart.Library 1.0
     </releaseNotes>
     <summary>
       Linq extension method that adds None ( aka !Any() ) capability.
