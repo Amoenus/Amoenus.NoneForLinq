@@ -14,6 +14,6 @@ artifacts:
 on_success: 
   - git config --global credential.helper store
   - ps: Add-Content "$env:USERPROFILE\.git-credentials" "https://$($env:access_token):x-oauth-basic@github.com`n"
-  - bash -c "git tag -d release/$($env:APPVEYOR_BUILD_VERSION) ; exit 0"
-  - git tag -a release/$($env:APPVEYOR_BUILD_VERSION) 
+  - bash -c "git tag -d $($env:APPVEYOR_BUILD_VERSION) ; exit 0"
+  - git tag -a $($env:APPVEYOR_BUILD_VERSION) 
   - git push origin release/$($env:APPVEYOR_BUILD_VERSION)
