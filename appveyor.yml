@@ -9,14 +9,5 @@ build:
 after_build:
 - cmd: nuget pack Amoenus.NoneForLinq\Package.nuspec -Version %appveyor_build_version%
 artifacts:
-- path: '**\Amoenus.NoneForLinq*.nupkg' 
-  name: packages 
-on_success:
-- cmd: 
-    git config --global credential.helper store
-
-    Add-Content "$env:USERPROFILE\.git-credentials" "https://$($env:access_token):x-oauth-basic@github.com`n"
-
-    git tag -a release/$($env:APPVEYOR_BUILD_VERSION)
-
-    git push origin release/$($env:APPVEYOR_BUILD_VERSION)
+- path: '**\Amoenus.NoneForLinq*.nupkg'
+  name: packages
