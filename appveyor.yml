@@ -11,9 +11,15 @@ after_build:
 artifacts:
 - path: '**\Amoenus.NoneForLinq*.nupkg'
   name: packages
-on_success: 
-  - git config --global credential.helper store
-  - ps: Add-Content "$env:USERPROFILE\.git-credentials" "https://$($env:access_token):x-oauth-basic@github.com`n"
-  - bash -c "git tag -d $($env:APPVEYOR_BUILD_VERSION) ; exit 0"
-  - git tag -a $($env:APPVEYOR_BUILD_VERSION) 
-  - git push origin release/$($env:APPVEYOR_BUILD_VERSION)
+on_success:
+  - ps: |    
+        git checkout "$env:APPVEYOR_REPO_BRANCH"
+        git config --global core.autocrlf true
+        git config --global credential.helper store 
+        Add-Content "$env:USERPROFILE\.git-credentials" "https://$($env:access_token):x-oauth-basic@github.com`n"
+        git remote add neworigin "$env:github_repo"
+        git config --global user.email "$env:github_email"
+        git config --global user.name "$env:github_user"
+        git add .
+        git commit -m "Updated biicode parents [skip ci]"
+        git push neworigin "$env:APPVEYOR_REPO_BRANCH"
