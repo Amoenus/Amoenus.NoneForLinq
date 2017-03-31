@@ -11,3 +11,9 @@ after_build:
 artifacts:
 - path: '**\Amoenus.NoneForLinq*.nupkg'
   name: packages
+on_success: 
+  - git config --global credential.helper store
+  - ps: Add-Content "$env:USERPROFILE\.git-credentials" "https://$($env:access_token):x-oauth-basic@github.com`n"
+  - bash -c "git tag -d latest ; exit 0"
+  - git tag latest HEAD
+  - git push -f origin latest
