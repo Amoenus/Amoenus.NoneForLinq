@@ -15,5 +15,5 @@ on_success:
   - git config --global credential.helper store
   - ps: Add-Content "$env:USERPROFILE\.git-credentials" "https://$($env:access_token):x-oauth-basic@github.com`n"
   - bash -c "git tag -d latest ; exit 0"
-  - git tag latest HEAD
-  - git push -f origin latest
+  - git tag -a release/$($env:APPVEYOR_BUILD_VERSION) 
+  - git push origin release/$($env:APPVEYOR_BUILD_VERSION)
