@@ -1,36 +1,36 @@
 <?xml version="1.0"?>
 
 <package>
-	<metadata>
-		<id>Amoenus.NoneForLinq</id>
-		<version>$version$</version>
-		<title>Amoenus None For Linq</title>
-		<authors>Romans Pokrovskis</authors>
-		<owners></owners>
-		<description>
-			Linq extension method that adds None ( aka !Any() ) capability.
-		</description>
-		<releaseNotes>
-			Converted to NetStandart.Library 1.0
-		</releaseNotes>
-		<summary>
-			Linq extension method that adds None ( aka !Any() ) capability.
-		</summary>
-		<language>en-US</language>
-		<projectUrl>https://github.com/Amoenus/Amoenus.NoneForLinq</projectUrl>
-		<iconUrl>https://github.com/Amoenus/Amoenus.NoneForLinq/blob/master/cc0-logo.png?raw=true</iconUrl>
-		<requireLicenseAcceptance>true</requireLicenseAcceptance>
-		<licenseUrl>http://unlicense.org/UNLICENSE</licenseUrl>
-		<copyright></copyright>
-		<dependencies>
-		<group targetFramework="netstandard1.0">
-					<dependency id="NETStandard.Library" version="1.6.0" />
-		</group>
-		</dependencies>
-		<references></references>
-		<tags></tags>
-	</metadata>
-	<files>
-		<file src="..\Amoenus.NoneForLinq\bin\Release\" target="lib\nestandard1.0" />
-	</files>
+  <metadata>
+    <id>Amoenus.NoneForLinq</id>
+    <version>$version$</version>
+    <title>Amoenus None For Linq</title>
+    <authors>Romans Pokrovskis</authors>
+    <owners></owners>
+    <description>
+      Linq extension method that adds None ( aka !Any() ) capability.
+    </description>
+    <releaseNotes>
+      Converted to NetStandart.Library 1.0
+    </releaseNotes>
+    <summary>
+      Linq extension method that adds None ( aka !Any() ) capability.
+    </summary>
+    <language>en-US</language>
+    <projectUrl>https://github.com/Amoenus/Amoenus.NoneForLinq</projectUrl>
+    <iconUrl>https://github.com/Amoenus/Amoenus.NoneForLinq/blob/master/cc0-logo.png?raw=true</iconUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <licenseUrl>http://unlicense.org/UNLICENSE</licenseUrl>
+    <copyright></copyright>
+    <dependencies>
+      <group targetFramework="netstandard1.0">
+        <dependency id="NETStandard.Library" version="1.6.0" />
+      </group>
+    </dependencies>
+    <references></references>
+    <tags></tags>
+  </metadata>
+  <files>
+    <file src="..\Amoenus.NoneForLinq\bin\Release\" target="lib\nestandard1.0" />
+  </files>
 </package>
