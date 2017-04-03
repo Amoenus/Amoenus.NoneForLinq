@@ -23,14 +23,11 @@
     <licenseUrl>http://unlicense.org/UNLICENSE</licenseUrl>
     <copyright></copyright>
     <dependencies>
-      <group targetFramework="netstandard1.0">
-        <dependency id="NETStandard.Library" version="1.6.0" />
-      </group>
     </dependencies>
     <references></references>
     <tags></tags>
   </metadata>
   <files>
-    <file src="..\Amoenus.NoneForLinq\bin\Release\" target="lib\nestandard1.0" />
+    <file src="..\Amoenus.NoneForLinq\bin\Release\" target="lib\netstandard1.0" />
   </files>
 </package>
