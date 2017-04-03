@@ -23,6 +23,7 @@
     <licenseUrl>http://unlicense.org/UNLICENSE</licenseUrl>
     <copyright></copyright>
     <dependencies>
+	       <group targetFramework="netstandard1.0">
     </dependencies>
     <references></references>
     <tags></tags>
