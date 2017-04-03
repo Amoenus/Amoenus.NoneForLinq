@@ -28,6 +28,6 @@
     <tags></tags>
   </metadata>
   <files>
-    <file src="..\Amoenus.NoneForLinq\bin\Release\" target="lib" />
+    <file src="..\Amoenus.NoneForLinq\bin\Release\" target="lib\nestandard1.0" />
   </files>
 </package>
