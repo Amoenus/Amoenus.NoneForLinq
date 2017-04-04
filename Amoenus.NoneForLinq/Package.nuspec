@@ -11,7 +11,7 @@
       Linq extension method that adds None ( aka !Any() ) capability.
     </description>
     <releaseNotes>
-      Converted to NetStandart.Library 1.0
+      Added Documentation file for IntelliSense
     </releaseNotes>
     <summary>
       Linq extension method that adds None ( aka !Any() ) capability.
@@ -28,6 +28,7 @@
     <tags></tags>
   </metadata>
   <files>
-    <file src="..\Amoenus.NoneForLinq\bin\Release\" target="lib" />
+    <file src="..\Amoenus.NoneForLinq\bin\Release\" target="lib\netstandard1.0" />
+    <file src="..\Amoenus.NoneForLinq\bin\Release\" target="lib\portable-net403+sl40+win+wp+Xbox40" />
   </files>
 </package>
