@@ -32,4 +32,8 @@
     <DocumentationFile>bin\Debug\netstandard1.0\Amoenus.NoneForLinq.xml</DocumentationFile>
   </PropertyGroup>
 
+  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|netstandard1.0|AnyCPU'">
+    <DocumentationFile>bin\Release\netstandard1.0\Amoenus.NoneForLinq.xml</DocumentationFile>
+  </PropertyGroup>
+
 </Project>
