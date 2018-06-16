@@ -20,10 +20,7 @@ namespace Amoenus.NoneForLinq
         ///     true if the source sequence contains none of the elements; otherwise, false.
         /// </returns>
         /// <seealso cref="System.Collections.Generic.IEnumerable{T}" />
-        public static bool None<TSource>(this IEnumerable<TSource> source)
-        {
-            return !source.Any();
-        }
+        public static bool None<TSource>(this IEnumerable<TSource> source) => !source.Any();
 
         /// <summary>
         ///     Determines whether none of the elements of a sequence satisfies a condition.
@@ -36,9 +33,6 @@ namespace Amoenus.NoneForLinq
         ///     false.
         /// </returns>
         /// <seealso cref="System.Collections.Generic.IEnumerable{T}" />
-        public static bool None<TSource>(this IEnumerable<TSource> source, Func<TSource, bool> predicate)
-        {
-            return !source.Any(predicate);
-        }
+        public static bool None<TSource>(this IEnumerable<TSource> source, Func<TSource, bool> predicate) => !source.Any(predicate);
     }
 }

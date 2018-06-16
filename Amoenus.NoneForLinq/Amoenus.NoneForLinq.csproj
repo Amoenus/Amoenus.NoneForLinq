@@ -1,48 +1,35 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
   <PropertyGroup>
-    <MinimumVisualStudioVersion>14.0</MinimumVisualStudioVersion>
-    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{DD64622D-DD69-4CD0-88D1-1587558F7071}</ProjectGuid>
-    <OutputType>Library</OutputType>
-    <RootNamespace>Amoenus.NoneForLinq</RootNamespace>
-    <AssemblyName>Amoenus.NoneForLinq</AssemblyName>
-    <DefaultLanguage>en-US</DefaultLanguage>
-    <FileAlignment>512</FileAlignment>
-    <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
-    <TargetFrameworkProfile>
-    </TargetFrameworkProfile>
-    <TargetFrameworkVersion>v5.0</TargetFrameworkVersion>
+    <TargetFrameworks>
+      netstandard1.0;
+      netstandard1.1;
+      netstandard1.2;
+      netstandard1.3;
+      netstandard1.4;
+      netstandard1.5;
+      netstandard1.6;
+      netstandard2.0;
+      net45;
+      net451;
+      net452;
+      net461;
+      netcoreapp1.0;
+      netcoreapp1.1;
+    </TargetFrameworks>
+    <Authors>Romans Pokrovskis</Authors>
+    <Company />
+    <Product>Amoenus None For Linq</Product>
+    <Description>Linq extension method that adds None ( aka !Any() ) capability.</Description>
+    <PackageLicenseUrl>http://unlicense.org/UNLICENSE</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/Amoenus/Amoenus.NoneForLinq</PackageProjectUrl>
+    <PackageIconUrl>https://github.com/Amoenus/Amoenus.NoneForLinq/blob/master/cc0-logo.png?raw=true</PackageIconUrl>
+    <RepositoryUrl>https://github.com/Amoenus/Amoenus.NoneForLinq</RepositoryUrl>
+    <PackageReleaseNotes>Added multi target support and dropped PCL support</PackageReleaseNotes>
   </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <DebugSymbols>true</DebugSymbols>
-    <DebugType>full</DebugType>
-    <Optimize>false</Optimize>
-    <OutputPath>bin\Debug\</OutputPath>
-    <DefineConstants>DEBUG;TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-    <DocumentationFile>bin\Debug\Amoenus.NoneForLinq.XML</DocumentationFile>
+
+  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|netstandard1.0|AnyCPU'">
+    <DocumentationFile>bin\Debug\netstandard1.0\Amoenus.NoneForLinq.xml</DocumentationFile>
   </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <DebugType>pdbonly</DebugType>
-    <Optimize>true</Optimize>
-    <OutputPath>bin\Release\</OutputPath>
-    <DefineConstants>TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-    <DocumentationFile>bin\Release\Amoenus.NoneForLinq.XML</DocumentationFile>
-  </PropertyGroup>
-  <ItemGroup>
-    <!-- A reference to the entire .NET Framework is automatically included -->
-    <None Include="Package.nuspec" />
-    <None Include="project.json" />
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="Enumerable.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
+
 </Project>
