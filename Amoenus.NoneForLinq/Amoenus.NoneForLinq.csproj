@@ -16,6 +16,7 @@
       net461;
       netcoreapp1.0;
       netcoreapp1.1;
+      netcoreapp2.1;
     </TargetFrameworks>
     <Authors>Romans Pokrovskis</Authors>
     <Company />
@@ -25,7 +26,7 @@
     <PackageProjectUrl>https://github.com/Amoenus/Amoenus.NoneForLinq</PackageProjectUrl>
     <PackageIconUrl>https://github.com/Amoenus/Amoenus.NoneForLinq/blob/master/cc0-logo.png?raw=true</PackageIconUrl>
     <RepositoryUrl>https://github.com/Amoenus/Amoenus.NoneForLinq</RepositoryUrl>
-    <PackageReleaseNotes>Added multi target support and dropped PCL support</PackageReleaseNotes>
+    <PackageReleaseNotes>Added multi target support and dropped PCL support. Now with documentation and net core 2.1 support</PackageReleaseNotes>
   </PropertyGroup>
 
   <PropertyGroup>
