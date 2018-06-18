@@ -28,12 +28,9 @@
     <PackageReleaseNotes>Added multi target support and dropped PCL support</PackageReleaseNotes>
   </PropertyGroup>
 
-  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|netstandard1.0|AnyCPU'">
-    <DocumentationFile>bin\Debug\netstandard1.0\Amoenus.NoneForLinq.xml</DocumentationFile>
-  </PropertyGroup>
-
-  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|netstandard1.0|AnyCPU'">
-    <DocumentationFile>bin\Release\netstandard1.0\Amoenus.NoneForLinq.xml</DocumentationFile>
+  <PropertyGroup>
+    <DocumentationFile>bin\$(Configuration)\$(TargetFramework)\Amoenus.NoneForLinq.xml</DocumentationFile>
+    <LangVersion>7.3</LangVersion>
   </PropertyGroup>
 
 </Project>
